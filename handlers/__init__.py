@@ -14,4 +14,7 @@ def register_all_handlers(app):
     register_handlers(app)
     register_group_commands(app)
     print("✅ Group commands registered!")
+from handlers.id import register_id_handler
 
+def register_all_handlers(app):
+    register_id_handler(app)
