@@ -18,3 +18,5 @@ from handlers.id import register_id_handler
 
 def register_all_handlers(app):
     register_id_handler(app)
+from handlers.owner import register_owner_handler
+register_owner_handler(app)
